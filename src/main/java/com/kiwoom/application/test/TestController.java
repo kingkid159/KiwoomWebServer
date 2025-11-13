@@ -16,4 +16,9 @@ public class TestController {
     public ResponseEntity<String> hello() {
         return ResponseEntity.ok(testService.connectTest());
     }
+
+    @GetMapping("/db")
+    public ResponseEntity<String> db() {
+        return ResponseEntity.ok(testService.dbConnectTest());
+    }
 }
