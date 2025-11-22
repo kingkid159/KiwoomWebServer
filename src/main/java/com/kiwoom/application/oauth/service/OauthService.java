@@ -48,12 +48,12 @@ public class OauthService {
     if (oauthTokenResponse == null) {
       throw new RuntimeException("Oauth token could not be retrieved");
     }
-    if (!"0".equals(oauthTokenResponse.getReturn_code())) {
+    if (!"0".equals(oauthTokenResponse.getReturnCode())) {
       throw new RuntimeException("Oauth token could not be retrieved");
     }
     oauthTokenRepository.save(
         OauthToken.builder().userId(userId).token(oauthTokenResponse.getToken())
-            .tokenType(oauthTokenResponse.getToken_type())
-            .expiresDt(oauthTokenResponse.getExpires_dt()).build());
+            .tokenType(oauthTokenResponse.getTokenType())
+            .expiresDt(oauthTokenResponse.getExpiresDt()).build());
   }
 }

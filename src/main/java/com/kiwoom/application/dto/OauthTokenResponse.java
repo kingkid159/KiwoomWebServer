@@ -1,5 +1,7 @@
 package com.kiwoom.application.dto;
 
+import com.fasterxml.jackson.databind.PropertyNamingStrategies;
+import com.fasterxml.jackson.databind.annotation.JsonNaming;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,12 +11,13 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class OauthTokenResponse {
 
-  private String expires_dt;
-  private String token_type;
+  private String expiresDt;
+  private String tokenType;
   private String token;
-  private String return_code;
-  private String return_msg;
+  private String returnCode;
+  private String returnMsg;
 
 }
