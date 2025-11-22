@@ -1,4 +1,4 @@
-package com.kiwoom.application.oauth.service;
+package com.kiwoom.application.kiwoom.oauth.service;
 
 import com.kiwoom.application.dto.OauthTokenRequest;
 import com.kiwoom.application.dto.OauthTokenResponse;
