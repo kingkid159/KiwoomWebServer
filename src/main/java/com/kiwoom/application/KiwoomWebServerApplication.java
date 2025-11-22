@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class KiwoomWebServerApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(KiwoomWebServerApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(KiwoomWebServerApplication.class, args);
+  }
 
 }

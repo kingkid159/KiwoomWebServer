@@ -1,18 +1,17 @@
-package com.kiwoom.application.test.entity;
+package com.kiwoom.application.dto;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
-@Table(name="test")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class TestEntity {
-    @Id
-    private String test;
+public class OauthTokenRequest {
+
+  private String grant_type;
+  private String appkey;
+  private String secretkey;
 }

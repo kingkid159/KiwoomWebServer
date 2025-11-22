@@ -9,8 +9,12 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class LoginRequest {
+public class OauthTokenResponse {
 
-  private String loginId;
-  private String password;
+  private String expires_dt;
+  private String token_type;
+  private String token;
+  private String return_code;
+  private String return_msg;
+
 }
